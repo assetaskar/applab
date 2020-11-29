@@ -1,0 +1,23 @@
+.company {
+   text-align: center;
+   padding-top: 110px;
+   padding-bottom: 55px;
+
+   &__title {
+      color: var(--basic-col);
+      margin-bottom: 30px;
+   }
+
+   &__emblems {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      max-width: 1030px;
+      margin: 0 auto;
+
+      img {
+         margin: 10px;
+      }
+   }
+}

@@ -93,7 +93,6 @@ h6 {
 
 :root {
   --logo-col: #fcae61;
-  --logo-col-head: #242f51;
   --btn-col: #2500f9;
   --btn-text-col: #fff;
   --basic-col: #242f51;
@@ -116,7 +115,7 @@ body {
 }
 
 .logo span {
-  color: var(--logo-col-head);
+  color: var(--basic-col);
 }
 
 .btn {
@@ -228,4 +227,28 @@ body {
 .header__image img {
   height: 100%;
   width: auto;
+}
+
+.company {
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 55px;
+}
+
+.company__title {
+  color: var(--basic-col);
+  margin-bottom: 30px;
+}
+
+.company__emblems {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.company__emblems img {
+  margin: 10px;
 }
