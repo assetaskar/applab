@@ -1,29 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>AppLab</title>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style.min.css">
-   </head>
-   <body>
-      @@include('_header.html')
-      <main>
-         <section class="company">
-            <div class="container">
-               <h2 class="company__title">Trust by companies like</h2>
-               <div class="company__emblems">
-                  <img src="img/pic/southwest.png" alt="southwest">
-                  <img src="img/pic/anubis.png" alt="southwest">
-                  <img src="img/pic/alonzo.png" alt="southwest">
-                  <img src="img/pic/express.png" alt="southwest">
-                  <img src="img/pic/maniac.png" alt="southwest">
-               </div>
-            </div>
-         </section>
-      </main>
-      <script src="js/script.min.js"></script>
-   </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AppLab</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;600&family=Texturina&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+	<body>
+		@@include('_header.html')
+		<main>
+			<section class="company">
+				<div class="container">
+					<h2 class="company__title">Trust by companies like</h2>
+					<div class="company__emblems">
+						<img src="img/pic/southwest.png" alt="southwest" />
+						<img src="img/pic/anubis.png" alt="southwest" />
+						<img src="img/pic/alonzo.png" alt="southwest" />
+						<img src="img/pic/express.png" alt="southwest" />
+						<img src="img/pic/maniac.png" alt="southwest" />
+					</div>
+				</div>
+			</section>
+			<section class="features">
+				<div class="container">
+					<div class="features__content">
+						<div class="features__top">
+							<h2 class="title features__title">Awesome apps features</h2>
+							<p class="text">
+								Increase productivity with a simple to-do app. app for managing your personal
+								budgets.
+							</p>
+						</div>
+						<div class="features__body">
+							<div class="features__item features__item_red">
+								<div class="subtitle subtitle_red">Fast Performance</div>
+								<p class="text">
+									Get your blood tests delivered at home collect a sample from the news your
+									blood tests.
+								</p>
+							</div>
+							<div class="features__item features__item_blue">
+								<div class="subtitle subtitle_blue">Prototyping</div>
+								<p class="text">
+									Get your blood tests delivered at home collect a sample from the news your
+									blood tests.
+								</p>
+							</div>
+							<div class="features__item features__item_green">
+								<div class="subtitle subtitle_green">Vector Editing</div>
+								<p class="text">
+									Get your blood tests delivered at home collect a sample from the news your
+									blood tests.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="features__image">
+						<img class="phone" src="img/pic/mobile2.svg" alt="mobile2" />
+						<img class="line" src="img/pic/line.png" alt="line" />
+						<span class="ellipse1"></span>
+						<span class="ellipse2"></span>
+						<span class="ellipse3"></span>
+						<span class="ellipse4"></span>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/script.min.js"></script>
+	</body>
 </html>
