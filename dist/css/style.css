@@ -105,6 +105,7 @@ html,
 body {
   font-family: 'Poppins', sans-serif;
   color: #616368;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -471,4 +472,34 @@ body {
 
 .smart__item_green::before {
   background-image: url(../img/icon/badge.png);
+}
+
+.build .container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 140px 50px 80px;
+  max-width: 1170px;
+}
+
+.build__content {
+  width: 420px;
+}
+
+.build__title {
+  margin-bottom: 20px;
+}
+
+.build__text {
+  margin-bottom: 35px;
+}
+
+.build__image {
+  position: absolute;
+  top: 0;
+  right: 600px;
+}
+
+.build__image img {
+  height: 100%;
 }
