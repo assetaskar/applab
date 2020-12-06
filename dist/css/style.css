@@ -132,9 +132,39 @@ body {
 }
 
 .container {
-  max-width: 1270px;
+  max-width: 1210px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.27em;
+  font-weight: 600;
+  color: var(--basic-col);
+}
+
+.text {
+  line-height: 1.625em;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.9em;
+  color: var(--basic-col);
+}
+
+.subtitle_red {
+  color: var(--subtitle-red);
+}
+
+.subtitle_blue {
+  color: var(--subtitle-blue);
+}
+
+.subtitle_green {
+  color: var(--subtitle-green);
 }
 
 .header {
@@ -388,35 +418,6 @@ body {
   z-index: 4;
 }
 
-.title {
-  font-size: 36px;
-  line-height: 1.27em;
-  font-weight: 600;
-  color: var(--basic-col);
-}
-
-.text {
-  line-height: 1.625em;
-}
-
-.subtitle {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 2.9em;
-}
-
-.subtitle_red {
-  color: var(--subtitle-red);
-}
-
-.subtitle_blue {
-  color: var(--subtitle-blue);
-}
-
-.subtitle_green {
-  color: var(--subtitle-green);
-}
-
 .smart__top {
   display: flex;
   justify-content: space-evenly;
@@ -502,4 +503,73 @@ body {
 
 .build__image img {
   height: 100%;
+}
+
+.advantages {
+  text-align: center;
+  padding: 200px 0 20px;
+}
+
+.advantages__top {
+  max-width: 630px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__title {
+  max-width: 450px;
+  margin-bottom: 25px;
+}
+
+.advantages__text {
+  margin-bottom: 90px;
+}
+
+.advantages__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.advantages__item {
+  flex: 270px 0 1;
+  margin: 0 20px 70px;
+  padding-top: 100px;
+}
+
+.advantages__app,
+.advantages__award,
+.advantages__storage,
+.advantages__customization,
+.advantages__planning,
+.advantages__support {
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 88px;
+}
+
+.advantages__app {
+  background-image: url(../img/icon/app.png);
+}
+
+.advantages__award {
+  background-image: url(../img/icon/trophy.png);
+}
+
+.advantages__storage {
+  background-image: url(../img/icon/storage.png);
+}
+
+.advantages__customization {
+  background-image: url(../img/icon/custom.png);
+}
+
+.advantages__planning {
+  background-image: url(../img/icon/planning.png);
+}
+
+.advantages__support {
+  background-image: url(../img/icon/support.png);
 }

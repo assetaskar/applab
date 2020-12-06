@@ -130,32 +130,3 @@
       }
    }
 }
-
-.title {
-   font-size: 36px;
-   line-height: 1.27em;
-   font-weight: 600;
-   color: var(--basic-col);
-}
-
-.text {
-   line-height: 1.625em;
-}
-
-.subtitle {
-   font-size: 20px;
-   font-weight: 600;
-   line-height: 2.9em;
-
-   &_red {
-      color: var(--subtitle-red);
-   }
-
-   &_blue {
-      color: var(--subtitle-blue);
-   }
-
-   &_green {
-      color: var(--subtitle-green);
-   }
-}

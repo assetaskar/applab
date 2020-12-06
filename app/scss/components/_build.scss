@@ -7,12 +7,15 @@
       padding: 140px 50px 80px;
       max-width: 1170px;
    }
+
    &__content {
       width: 420px;
    }
+
    &__title {
       margin-bottom: 20px;
    }
+
    &__text {
       margin-bottom: 35px;
    }
@@ -21,7 +24,7 @@
       position: absolute;
       top: 0;
       right: 600px;
-      
+
       img {
          height: 100%;
       }

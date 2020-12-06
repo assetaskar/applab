@@ -1,0 +1,68 @@
+.advantages {
+   text-align: center;
+   padding: 200px 0 20px;
+
+   &__top {
+      max-width: 630px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__title {
+      max-width: 450px;
+      margin-bottom: 25px;
+   }
+
+   &__text {
+      margin-bottom: 90px;
+   }
+
+   &__bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+   }
+
+   &__item {
+      flex: 270px 0 1;
+      margin: 0 20px 70px;
+      padding-top: 100px;
+   }
+
+   &__app,
+   &__award,
+   &__storage,
+   &__customization,
+   &__planning,
+   &__support {
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: 88px;
+   }
+
+   &__app {
+      background-image: url(../img/icon/app.png);
+   }
+
+   &__award {
+      background-image: url(../img/icon/trophy.png);
+   }
+
+   &__storage {
+      background-image: url(../img/icon/storage.png);
+   }
+
+   &__customization {
+      background-image: url(../img/icon/custom.png);
+   }
+
+   &__planning {
+      background-image: url(../img/icon/planning.png);
+   }
+
+   &__support {
+      background-image: url(../img/icon/support.png);
+   }
+}
