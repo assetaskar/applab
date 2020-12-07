@@ -99,6 +99,8 @@ h6 {
   --subtitle-red: #f55767;
   --subtitle-blue: #2563ff;
   --subtitle-green: #40975f;
+  --unchecked: #8a8c8f;
+  --card: #999ca5;
 }
 
 html,
@@ -572,4 +574,128 @@ body {
 
 .advantages__support {
   background-image: url(../img/icon/support.png);
+}
+
+.price {
+  text-align: center;
+  padding: 90px 0 90px;
+}
+
+.price .container {
+  max-width: 710px;
+}
+
+.price__title {
+  margin-bottom: 20px;
+}
+
+.price__text {
+  margin-bottom: 70px;
+}
+
+.price__plan {
+  width: 280px;
+  height: 60px;
+  border: 2px solid #ebebeb;
+  border-radius: 17.75em;
+  line-height: 54px;
+  font-weight: 700;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.price__plan input[type="radio"] {
+  display: none;
+}
+
+.price__plan input[type="radio"]:checked + label {
+  color: var(--btn-text-col);
+}
+
+.price__plan label {
+  z-index: 2;
+  color: var(--unchecked);
+}
+
+.price__plan::before {
+  content: '';
+  height: 90%;
+  width: 48%;
+  border-radius: 24px;
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  background-color: var(--btn-col);
+  z-index: 1;
+}
+
+.price__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 -20px;
+  align-items: flex-start;
+}
+
+.card {
+  flex: 315px 0 0;
+  border: 2px solid #ebebeb;
+  border-radius: 9px;
+  overflow: hidden;
+  color: var(--card);
+  transition: 1s;
+  margin: 10px;
+}
+
+.card:hover {
+  border: none;
+  box-shadow: 4px 55px 62px 0px rgba(144, 163, 177, 0.18);
+}
+
+.card__top {
+  background: #fdfefe;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fdfefe 0%, #f4f7f9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfefe', endColorstr='#f4f7f9', GradientType=0);
+  padding: 70px 5px 30px;
+}
+
+.card__dollar {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.card__dollar span {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--basic-col);
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--basic-col);
+  margin-bottom: 10px;
+}
+
+.card__bottom {
+  padding: 35px 5px 20px;
+}
+
+.card__list {
+  margin-bottom: 40px;
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.card__slogan {
+  margin-top: 30px;
+  color: var(--btn-col);
 }
