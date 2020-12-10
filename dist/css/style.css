@@ -101,6 +101,7 @@ h6 {
   --subtitle-green: #40975f;
   --unchecked: #8a8c8f;
   --card: #999ca5;
+  --question: #f5f7fa;
 }
 
 html,
@@ -810,4 +811,60 @@ body {
 .swiper-button-prev[aria-disabled="false"],
 .swiper-button-next[aria-disabled="false"] {
   background-color: #eff3f8;
+}
+
+.faq {
+  padding: 100px 0;
+}
+
+.faq__top {
+  max-width: 640px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.faq__title {
+  font-size: 40px;
+  line-height: 1.45em;
+  margin-bottom: 25px;
+}
+
+.faq__item {
+  max-width: 945px;
+  margin: 0 auto 10px;
+  padding: 25px 90px 0 45px;
+  margin-bottom: 10px;
+  background-color: var(--question);
+}
+
+.faq__item.show > .faq__answer {
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.faq__item.show > .faq__question::after {
+  display: none;
+}
+
+.faq__question {
+  position: relative;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.faq__question::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: -55px;
+  font-size: 35px;
+  font-weight: normal;
+  transform: translateY(-50%);
+}
+
+.faq__answer {
+  height: 0;
+  overflow: hidden;
+  transition: .5s all;
 }
