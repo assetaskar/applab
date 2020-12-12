@@ -1,0 +1,50 @@
+.download {
+   padding: 100px 0 90px;
+
+   .container {
+      position: relative;
+   }
+
+   &__title {
+      font-size: 48px;
+      line-height: 1.2em;
+      margin-bottom: 20px;
+   }
+
+   &__text {
+      max-width: 635px;
+      margin-bottom: 45px;
+   }
+
+   &__links {
+      min-height: 55px;
+
+      img {
+         height: 100%;
+      }
+   }
+
+   &__android {
+      display: inline-block;
+      height: 55px;
+      margin-right: 2.6%;
+      margin-bottom: 10px;
+   }
+
+   &__ios {
+      display: inline-block;
+      height: 55px;
+      margin-bottom: 10px;
+   }
+
+   &__image {
+      position: absolute;
+      left: 535px;
+      bottom: -175px;
+      height: 475px;
+
+      img {
+         height: 100%;
+      }
+   }
+}

@@ -868,3 +868,54 @@ body {
   overflow: hidden;
   transition: .5s all;
 }
+
+.download {
+  padding: 100px 0 90px;
+}
+
+.download .container {
+  position: relative;
+}
+
+.download__title {
+  font-size: 48px;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.download__text {
+  max-width: 635px;
+  margin-bottom: 45px;
+}
+
+.download__links {
+  min-height: 55px;
+}
+
+.download__links img {
+  height: 100%;
+}
+
+.download__android {
+  display: inline-block;
+  height: 55px;
+  margin-right: 2.6%;
+  margin-bottom: 10px;
+}
+
+.download__ios {
+  display: inline-block;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+.download__image {
+  position: absolute;
+  left: 535px;
+  bottom: -175px;
+  height: 475px;
+}
+
+.download__image img {
+  height: 100%;
+}

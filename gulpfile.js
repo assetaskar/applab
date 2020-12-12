@@ -60,7 +60,7 @@ function css() {
 		.pipe(
 			scss({
 				outputStyle: "expanded",
-			})
+			}).on("error", scss.logError)
 		)
 		.pipe(groupMedia())
 		.pipe(
@@ -128,9 +128,8 @@ function clean() {
 	return del(path.clean);
 }
 
-const build = series(clean, parallel(html, css, js, images));
-
-exports.clean = clean;
-exports.build = build;
 exports.images = images;
-exports.default = parallel(build, browserSync, startWatch);
+exports.clean = clean;
+exports.build = series(clean, parallel(html, css, js, images));
+exports.default = series(clean, parallel(html, css, js, images), parallel(startWatch, browserSync));
+exports.race = parallel(startWatch, browserSync);
