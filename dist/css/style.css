@@ -71,7 +71,8 @@ a:hover {
   text-decoration: none;
 }
 
-ul li {
+ul,
+li {
   list-style: none;
 }
 
@@ -102,6 +103,8 @@ h6 {
   --unchecked: #8a8c8f;
   --card: #999ca5;
   --question: #f5f7fa;
+  --footer: #09142e;
+  --footer-link: #273043;
 }
 
 html,
@@ -114,7 +117,6 @@ body {
 .logo {
   font-size: 30px;
   font-weight: 700;
-  font-weight: bold;
 }
 
 .logo a {
@@ -168,6 +170,10 @@ body {
 
 .subtitle_green {
   color: var(--subtitle-green);
+}
+
+a:hover {
+  color: var(--logo-col);
 }
 
 .header {
@@ -650,7 +656,7 @@ body {
 }
 
 .card:hover {
-  border: none;
+  border-color: transparent;
   box-shadow: 4px 55px 62px 0px rgba(144, 163, 177, 0.18);
 }
 
@@ -918,4 +924,54 @@ body {
 
 .download__image img {
   height: 100%;
+}
+
+.footer {
+  padding: 100px 0;
+  background-color: var(--footer);
+  text-align: center;
+}
+
+.footer__nav {
+  margin-bottom: 30px;
+}
+
+.footer__socials {
+  margin-bottom: 75px;
+}
+
+.footer__link {
+  display: inline-block;
+  color: var(--footer-link);
+  margin: 10px 20px;
+}
+
+.footer__link i {
+  font-size: 30px;
+}
+
+.footer__link i:hover {
+  color: #fff;
+}
+
+.footer .logo {
+  margin-bottom: 40px;
+}
+
+.footer .logo span {
+  color: var(--btn-text-col);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  margin: 10px 15px;
+}
+
+.nav__link {
+  color: #fff;
 }

@@ -10,6 +10,8 @@
    --unchecked: #8a8c8f;
    --card: #999ca5;
    --question: #f5f7fa;
+   --footer: #09142e;
+   --footer-link: #273043;
 }
 
 html,
@@ -22,7 +24,6 @@ body {
 .logo {
    font-size: 30px;
    font-weight: 700;
-   font-weight: bold;
 
    a {
       color: var(--logo-col);
@@ -76,4 +77,8 @@ body {
    &_green {
       color: var(--subtitle-green);
    }
+}
+
+a:hover {
+   color: var(--logo-col);
 }

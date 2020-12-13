@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
 	<body>
-		@@include('_header.html')
+		@@include('./_header.html')
 		<main>
 			<section class="company">
 				<div class="container">
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="features">
+			<section class="features" id="features">
 				<div class="container">
 					<div class="features__content">
 						<div class="features__top">
@@ -184,7 +184,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="price">
+			<section class="price" id="price">
 				<div class="container">
 					<h2 class="title price__title">Get awesome features, without extra charges</h2>
 					<p class="text price__text">
@@ -234,7 +234,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews">
+			<section class="reviews" id="reviews">
 				<div class="container">
 					<div class="map"></div>
 					<div class="reviews__box">
@@ -352,7 +352,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="faq">
+			<section class="faq" id="faq">
 				<div class="container">
 					<div class="faq__top">
 						<h2 class="title faq__title">Frequently asked questions</h2>
@@ -442,6 +442,7 @@
 				</div>
 			</section>
 		</main>
+		@@include('./_footer.html')
 
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="js/script.min.js"></script>

@@ -1,0 +1,49 @@
+.footer {
+   padding: 100px 0;
+   background-color: var(--footer);
+   text-align: center;
+
+   &__nav {
+      margin-bottom: 30px;
+   }
+
+   &__socials {
+      margin-bottom: 75px;
+   }
+
+   &__link {
+      display: inline-block;
+      color: var(--footer-link);
+      margin: 10px 20px;
+
+      i {
+         font-size: 30px;
+
+         &:hover {
+            color: #fff;
+         }
+      }
+   }
+
+   .logo {
+      margin-bottom: 40px;
+
+      span {
+         color: var(--btn-text-col);
+      }
+   }
+}
+
+.nav {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+
+   &__item {
+      margin: 10px 15px;
+   }
+
+   &__link {
+      color: #fff;
+   }
+}
