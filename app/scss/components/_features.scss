@@ -1,6 +1,10 @@
 .features {
    padding: 100px 0;
 
+   @media (max-width: 670px) {
+      padding: 50px 0;
+   }
+
    .container {
       max-width: 930px;
       display: flex;

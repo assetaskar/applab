@@ -6,6 +6,10 @@
       position: relative;
       padding: 140px 50px 80px;
       max-width: 1170px;
+      
+      @media (max-width: 670px) {
+         padding: 50px 50px 40px;
+      }
    }
 
    &__content {

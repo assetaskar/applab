@@ -177,52 +177,69 @@ a:hover {
 }
 
 .header {
-  padding: 90px 0 0;
+  padding: 30px 0 0;
   background-color: #fdfdfe;
-  background: url(../img/bg/header3.svg) right 150px/80% no-repeat, url(../img/bg/header2.png) 5px 55%/49% no-repeat, url(../img/bg/header.png) bottom/contain no-repeat;
+  background: url(../img/bg/header.png) bottom/contain no-repeat;
 }
 
 .header__top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .header__nav {
   display: flex;
-  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  -ms-grid-row-align: center;
+      align-self: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  margin: 0 3%;
 }
 
 .header__menu {
+  padding: 0 5px;
   display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+          mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 
-.header__list:not(:first-child) {
-  margin-left: 35px;
+.header__menu::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .header__link {
+  line-height: 2em;
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   color: var(--basic-col);
+  margin: 0 15px;
 }
 
 .header__btn_top {
-  margin-left: 50px;
+  flex-shrink: 0;
 }
 
 .header__body {
-  min-height: 840px;
   padding: 0 6%;
   position: relative;
 }
 
 .header__btn_body {
-  margin-right: 20px;
+  margin: 0 20px 20px 0;
 }
 
 .header__content {
-  padding-top: 230px;
+  padding: 230px 0;
   max-width: 530px;
-  margin-bottom: 230px;
 }
 
 .header__caption {
@@ -261,15 +278,19 @@ a:hover {
 }
 
 .header__image {
-  height: 800px;
+  height: 90%;
   position: absolute;
   left: 700px;
-  top: 3%;
+  top: 5%;
 }
 
 .header__image img {
   height: 100%;
   width: auto;
+}
+
+.header .container {
+  background: url(../img/bg/header3.svg) right/90% no-repeat, url(../img/bg/header2.png) 5px 55%/49% no-repeat;
 }
 
 .company {
@@ -430,13 +451,14 @@ a:hover {
 .smart__top {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 100px;
 }
 
 .smart__title {
   font-size: 40px;
   flex: 50%;
-  padding: 0 55px;
+  padding: 0 50px;
   border-right: 1px solid #b9b9b8;
 }
 
@@ -585,7 +607,7 @@ a:hover {
 
 .price {
   text-align: center;
-  padding: 90px 0 90px;
+  padding: 90px 0;
 }
 
 .price .container {
@@ -974,4 +996,138 @@ a:hover {
 
 .nav__link {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    padding: 1em 2em;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .header__content {
+    padding: 150px 0;
+  }
+
+  .header__title {
+    font-size: 42px;
+  }
+
+  .reviews__box {
+    min-width: 100%;
+  }
+
+  .reviews .map {
+    display: none;
+  }
+
+  .faq__item {
+    padding-left: 4%;
+    padding-right: 40px;
+  }
+
+  .faq__question::after {
+    right: -27px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 670px) {
+  .company {
+    padding: 50px 0;
+  }
+
+  .features {
+    padding: 50px 0;
+  }
+
+  .smart__top {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .smart__title {
+    min-width: 100%;
+    border-right: inherit;
+    border-bottom: 1px solid #b9b9b8;
+    padding-bottom: 30px;
+  }
+
+  .smart__bottom {
+    margin-bottom: 30px;
+  }
+
+  .build .container {
+    padding: 50px 50px 40px;
+  }
+
+  .advantages {
+    padding-top: 70px;
+  }
+
+  .price {
+    padding: 30px 0;
+  }
+
+  .reviews {
+    padding: 30px 0;
+  }
+
+  .reviews__btn {
+    display: none;
+  }
+
+  .faq {
+    padding: 30px 0;
+  }
+
+  .download {
+    padding: 30px 0;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: .7em 1.1em;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .header__content {
+    padding: 100px 0;
+  }
+
+  .header__caption {
+    font-size: 12px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+
+  .smart__title {
+    font-size: 20px;
+  }
 }

@@ -3,6 +3,10 @@
    background-color: var(--footer);
    text-align: center;
 
+   @media (max-width:670px) {
+      padding: 50px 0;
+   }
+
    &__nav {
       margin-bottom: 30px;
    }

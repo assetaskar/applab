@@ -1,6 +1,10 @@
 .faq {
    padding: 100px 0;
 
+   @media (max-width:670px) {
+      padding: 30px 0;
+   }
+
    &__top {
       max-width: 640px;
       text-align: center;
@@ -19,6 +23,11 @@
       padding: 25px 90px 0 45px;
       margin-bottom: 10px;
       background-color: var(--question);
+
+      @media (max-width: 768px) {
+         padding-left: 4%;
+         padding-right: 40px;
+      }
 
       &.show {
          &>.faq__answer {
@@ -46,6 +55,11 @@
          font-size: 35px;
          font-weight: normal;
          transform: translateY(-50%);
+         
+         @media (max-width: 768px) {
+            right: -27px;
+            font-size: 24px;
+         }
       }
    }
 
