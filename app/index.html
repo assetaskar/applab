@@ -191,16 +191,18 @@
 						The rise of mobile devices transforms the way we consume information
 						entirely and the world's most elevant channels such as Facebook.
 					</p>
-					<p class="price__plan">
+					<div class="price__plan">
 						<input type="radio" name="plan" id="monthly" checked />
 						<label for="monthly">Monthly</label>
 						<input type="radio" name="plan" id="annually" />
 						<label for="annually">Annually</label>
-					</p>
+					</div>
 					<div class="price__cards">
 						<div class="card">
 							<div class="card__top">
-								<div class="card__dollar"><span>$0</span>/month</div>
+								<div class="card__dollar">
+									<span id="business-class">$0</span>/month
+								</div>
 								<h2 class="card__title">Business Class</h2>
 								<h3 class="card__subtitle">For small teams or office</h3>
 							</div>
@@ -216,7 +218,9 @@
 						</div>
 						<div class="card">
 							<div class="card__top">
-								<div class="card__dollar"><span>$99</span>/month</div>
+								<div class="card__dollar">
+									<span id="pro-master">$99</span>/month
+								</div>
 								<h2 class="card__title">Pro Master</h2>
 								<h3 class="card__subtitle">For Best opportunities</h3>
 							</div>

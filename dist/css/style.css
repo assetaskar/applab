@@ -644,6 +644,7 @@ a:hover {
 }
 
 .price__plan label {
+  cursor: pointer;
   z-index: 2;
   color: var(--unchecked);
 }
@@ -657,7 +658,12 @@ a:hover {
   top: 5%;
   left: 1%;
   background-color: var(--btn-col);
+  transition: .3s;
   z-index: 1;
+}
+
+.price__plan.annually::before {
+  left: 51%;
 }
 
 .price__cards {

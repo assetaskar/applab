@@ -39,6 +39,7 @@
       }
 
       label {
+         cursor: pointer;
          z-index: 2;
          color: var(--unchecked);
       }
@@ -52,7 +53,12 @@
          top: 5%;
          left: 1%;
          background-color: var(--btn-col);
+         transition: .3s;
          z-index: 1;
+      }
+
+      &.annually::before {
+         left: 51%;
       }
    }
 
